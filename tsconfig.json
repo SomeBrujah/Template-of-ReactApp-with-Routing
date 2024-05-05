@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true, // For allowing default imports
+    "allowSyntheticDefaultImports": true, // For default import's types compatibility
+    "outDir": "./dist/",
+    "module": "ES6",
+    "target": "ES5",
+    "jsx": "react-jsx", // Allow us to avoid write React in each child of main component
+    "allowJs": true,
+    "moduleResolution": "Node",
+  },
+  "ts-node": { // Options for default imports in webpack.config.ts
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
